@@ -1,0 +1,17 @@
+fastapi[standard]
+uvicorn
+pydantic
+pypdf2
+spacy
+langchain
+langchain-google-genai
+langchain-community
+requests
+python-dotenv
+pdfplumber
+psutil
+aiohttp
+sse_starlette
+prometheus_client
+google-generativeai
+faiss-cpu

@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  contract-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PORT=8000
+      - HOST=0.0.0.0
+      - DEBUG=false
+    volumes:
+      - ./app/data:/app/app/data
+    restart: unless-stopped
